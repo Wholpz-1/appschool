@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rf1"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_Title"
+                android:text="APP School"
+                android:textSize="30sp"
+                android:textColor="#FFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_below="@+id/txt_Title"
+                android:text="'El Futuro es Hoy'"
+                android:layout_marginTop="6dp"
+                android:textSize="18sp"
+                android:textColor="#FFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/user"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:onClick="onClick"
+                    android:id="@+id/img_alumno"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/student"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Alumno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:onClick="onClick"
+                    android:id="@+id/Line_grado"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/books"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Grado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:onClick="onClick"
+                    android:id="@+id/Line_ins"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/notebook"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Inscripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/listalu"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Lista "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
