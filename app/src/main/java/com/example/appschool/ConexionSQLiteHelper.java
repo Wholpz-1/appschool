@@ -19,6 +19,7 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Utilidades.CREAR_TABLA_ALUMNO);
         db.execSQL(Utilidades.CREAR_TABLA_GRADOS);
+        db.execSQL(Utilidades.CREAR_TABLA_INSCRIPCION);
 
     }
 
@@ -26,6 +27,7 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + Utilidades.TABLA_ALUMNO);
         db.execSQL("DROP TABLE IF EXISTS "+ Utilidades.TABLA_GRADO);
+        db.execSQL("DROP TABLE IF EXISTS "+ Utilidades.TABLA_INSCRIPCION);
         onCreate(db);
 
     }

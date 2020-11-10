@@ -23,7 +23,7 @@ public class ListaGrado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_grado);
 
-        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_grado", null,1);
+        conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_alumnos", null,1);
         listGrado=new ArrayList<>();
 
         recycler=(RecyclerView)findViewById(R.id.recyclerGrados);

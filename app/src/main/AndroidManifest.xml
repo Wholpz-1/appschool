@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSchool">
-        <activity android:name=".ListaGrado"></activity>
+        <activity android:name=".ListaInscripcion"></activity>
+        <activity android:name=".Inscripcion" />
+        <activity android:name=".ListaGrado" />
         <activity android:name=".Grado" />
         <activity android:name=".ListaAlumno" />
         <activity android:name=".Alumno" />

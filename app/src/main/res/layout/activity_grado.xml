@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Grado"
-    android:background="@drawable/rf1">
+    android:background="@drawable/rr">
     <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="30dp"
@@ -41,9 +42,10 @@
                 android:layout_height="wrap_content"
                 android:hint="Ingrese codigo "
                 android:shadowColor="#000"
-                android:textColorHint="#000"/>
+                android:textColorHint="#000"
+                android:textColor="@color/black"/>
             <Button
-                android:onClick="busGrado"
+                android:onClick="onClickbuscar"
                 android:id="@+id/btngrado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -54,6 +56,7 @@
 
 
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,17 +71,24 @@
             android:layout_height="wrap_content"
             android:hint="Descripcion:"
             android:textColorHint="#000"
-            android:shadowColor="#000"/>
+            android:shadowColor="#000"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
 
         <Button
-            android:onClick="onClick"
+            android:onClick="onClickw"
             android:id="@+id/regrado"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Agregar"
-            android:textColor="#ffff"/>
+            android:textColor="#ffff"
+            android:layout_marginRight="10dp"/>
 
         <Button
             android:id="@+id/listgrado"
@@ -87,23 +97,33 @@
             android:layout_gravity="center"
             android:onClick="onClick"
             android:text="Lista"
-            android:textColor="#ffff" />
+            android:textColor="#ffff"
+            android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/editgrado"
             android:layout_width="104dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:onClick="Editargra"
+            android:onClick="onCliceditar"
             android:text="Editar"
-            android:textColor="#ffff" />
+            android:textColor="#ffff"
+            android:layout_marginRight="10dp"/>
         <Button
-            android:onClick="Eliminargra"
+            android:onClick="onCliceliminar"
             android:id="@+id/eliminargra"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Eliminar"
-            android:textColor="#ffff"/>
+            android:textColor="#ffff"
+            android:layout_marginLeft="10dp"/>
+        </LinearLayout>
 
 
 

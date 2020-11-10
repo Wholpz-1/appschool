@@ -32,14 +32,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Codigo:"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
 
                 <TextView
                     android:id="@+id/itemId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="19dp"
-                    android:text="Codigo" />
+                    android:text="Codigo"
+                    android:textColor="#000"
+                    android:textSize="18dp"/>
 
             </LinearLayout>
 
@@ -53,14 +56,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre:"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/itemNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="19dp"
-                android:text="nombre" />
+                android:text="nombre"
+                android:textColor="#000"
+                android:textSize="18dp"/>
 
         </LinearLayout>
 
@@ -73,14 +79,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Apellido:"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/itemApellidos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18dp"
-                android:text="apellido" />
+                android:text="apellido"
+                android:textColor="#000"
+                android:textSize="18dp"/>
 
         </LinearLayout>
 
@@ -92,14 +101,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Telefono:"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#000"/>
 
             <TextView
                 android:id="@+id/itemTelefono"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14.65dp"
-                android:text="telefono" />
+                android:text="telefono"
+                android:textColor="#000"
+                android:textSize="18dp"/>
 
 
 
@@ -116,14 +128,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Direccion:"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/itemDireccion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="direccion" />
+                android:text="direccion"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
 
 
         </LinearLayout>

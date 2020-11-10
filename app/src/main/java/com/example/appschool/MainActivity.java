@@ -27,6 +27,18 @@ public class MainActivity extends AppCompatActivity {
                     miIntent = new Intent(MainActivity.this, Grado.class);
                     break;
 
+                case R.id.Line_ins:
+                    miIntent = new Intent(MainActivity.this, Inscripcion.class);
+                    break;
+                case R.id.listains:
+                    miIntent = new Intent(MainActivity.this, ListaInscripcion.class);
+                    break;
+                case R.id.listagra:
+                    miIntent = new Intent(MainActivity.this, ListaGrado.class);
+                    break;
+                case R.id.listalu:
+                    miIntent = new Intent(MainActivity.this, ListaAlumno.class);
+                    break;
 
             }
             startActivity(miIntent);

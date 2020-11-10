@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Alumno"
     android:background="@drawable/rr"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
 
     <LinearLayout
@@ -24,15 +25,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registro de Alumos"
+            android:text="Registro de Inscripciones"
             android:textSize="30sp"
             android:gravity="center"
-            android:textColor="#000"/>
+            android:textColor="#ffff"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Busqueda de Alumno"
+            android:text="Busqueda de Inscripcion"
             android:textSize="22dp"
             android:textColor="#000"/>
 
@@ -48,7 +49,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Ingrese codigo "
                 android:shadowColor="#000"
-                android:textColorHint="#000"/>
+                android:textColorHint="#000"
+                android:textColor="@color/black"/>
             <Button
                 android:onClick="onClickBuscar"
                 android:id="@+id/btnalubus"
@@ -64,49 +66,86 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrar Alumnos"
+            android:text="Registrar de Inscripcion"
             android:textSize="22dp"
             android:textColor="#000"/>
 
-        <EditText
-            android:id="@+id/campoNombre"
+
+
+        <AutoCompleteTextView
+            android:id="@+id/complealu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre:"
+            android:hint="Nombre de Alumno:"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:shadowColor="@color/black"/>
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/complegra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grado:"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:shadowColor="@color/black"/>
+
+
+
+        <EditText
+            android:id="@+id/campoinssec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seccion:"
             android:textColorHint="#000"
             android:shadowColor="#000"/>
-        <EditText
-            android:id="@+id/campoApellido"
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Apellido:"
+            android:hint="Fecha de Inscripcion"
             android:textColorHint="#000"
             android:shadowColor="#000"
-            android:textColor="@color/black"/>
+            android:textSize="20dp"
+            />
         <EditText
-            android:id="@+id/campoTelefono"
+            android:id="@+id/campoinsfecha"
+            android:onClick="onClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Telefono:"
+            android:hint="DD/MM/YY"
+            android:textAlignment="center"
             android:textColorHint="#000"
             android:shadowColor="#000"
-            android:textColor="@color/black"/>
-        <EditText
-            android:id="@+id/campoDireccion"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/preimg"
+            android:layout_width="160dp"
+            android:layout_height="112dp" />
+
+        <Button
+            android:id="@+id/btnfoto"
+            android:onClick="abrircamara"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Direccion:"
-            android:textColorHint="#000"
-            android:shadowColor="#000"
-            android:textColor="@color/black"/>
+            android:text="Tomar Foto" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="center">
+
+
         <Button
             android:onClick="onClickw"
-            android:id="@+id/regalu"
+            android:id="@+id/regins"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,8 +153,9 @@
             android:textColor="#ffff"
             android:layout_marginRight="10dp"/>
 
+
         <Button
-            android:id="@+id/list_alu"
+            android:id="@+id/listins"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -123,32 +163,32 @@
             android:text="Lista"
             android:textColor="#ffff"
             android:layout_marginLeft="10dp"/>
-        </LinearLayout>
 
+
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+            <Button
+                android:id="@+id/editins"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClickEditar"
+                android:text="Editar"
+                android:textColor="#ffff"
+                android:layout_marginRight="10dp"/>
 
-        <Button
-            android:id="@+id/editalu"
-            android:layout_width="104dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:onClick="onClickEditar"
-            android:text="Editar"
-            android:textColor="#ffff"
-            android:layout_marginRight="10dp"/>
-        <Button
-            android:layout_marginLeft="10dp"
-            android:onClick="onClickEliminar"
-            android:id="@+id/eliminaralu"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Eliminar"
-            android:textColor="#ffff"/>
-
+            <Button
+                android:onClick="onClickEliminar"
+                android:id="@+id/eliminarins"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:textColor="#ffff"
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
 

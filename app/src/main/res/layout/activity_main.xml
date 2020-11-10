@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rf1"
+    android:background="@drawable/rr"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
@@ -26,7 +26,7 @@
                 android:id="@+id/txt_Title"
                 android:text="APP School"
                 android:textSize="30sp"
-                android:textColor="#FFFF"
+                android:textColor="#000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -34,7 +34,7 @@
                 android:text="'El Futuro es Hoy'"
                 android:layout_marginTop="6dp"
                 android:textSize="18sp"
-                android:textColor="#FFFF"
+                android:textColor="#000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -72,7 +72,7 @@
                     android:onClick="onClick"
                     android:id="@+id/img_alumno"
                     android:orientation="vertical"
-                    android:padding="16dp"
+                    android:padding="15dp"
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -83,7 +83,7 @@
 
                     <TextView
                         android:layout_marginTop="16dp"
-                        android:textColor="#6f6f6f"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:text="Alumno"
                         android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
 
                     <TextView
                         android:layout_marginTop="16dp"
-                        android:textColor="#6f6f6f"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:text="Grado"
                         android:layout_width="wrap_content"
@@ -157,11 +157,89 @@
 
                     <TextView
                         android:layout_marginTop="16dp"
-                        android:textColor="#6f6f6f"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:text="Inscripcion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/listains"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="92dp"
+                        android:layout_height="83dp"
+                        android:src="@drawable/test" />
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:text="Lista de inscripciones "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/listagra"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/grado"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:text="Lista de grados "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
 
 
                 </LinearLayout>
@@ -189,18 +267,17 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-
-
+                        android:src="@drawable/lista"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
 
                     <TextView
                         android:layout_marginTop="16dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="Lista "
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:text="Lista de Alumnos"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content" />
 
 
 
@@ -208,7 +285,6 @@
 
 
             </androidx.cardview.widget.CardView>
-
 
         </GridLayout>
 
