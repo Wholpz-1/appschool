@@ -48,7 +48,7 @@ public class Inscripcion extends AppCompatActivity {
     ImageView  preimg;
 
 
-    EditText campoinsalu, campoinsgra, campoinssec, busID;
+    EditText  campoinssec, busID;
 
     EditText campoinsfecha;
     private static final int CAMERA_REQUEST = 200;
@@ -319,7 +319,6 @@ public class Inscripcion extends AppCompatActivity {
 
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_alumnos", null, 1);
         SQLiteDatabase db = conn.getReadableDatabase();
-
         String[] parametros = {busID.getText().toString()};
 
         try {
